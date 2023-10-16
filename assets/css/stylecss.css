@@ -10,6 +10,7 @@
     --gray-sh: #272626;
     --redlight:#f77b7b;
     --white:#ffffff;
+    --linke-icon:#d7e9cb;
 
     
     
@@ -63,16 +64,26 @@ header{
     list-style: none;
     display: flex;
 }
-.div-list-header ul li span:not(.home){
+.div-list-header ul li  span:not(.home) a{
     color: var( --gray-sh);
-   
+    text-decoration: none;
 }
 .div-list-header ul li .home{
-    color: var( --green-main);
+ 
+    
+    color:var(--green-main);
    
 }
 .div-list-header li{
     margin-right: 26px;
+    display: flex;
+    
+}
+.div-list-header li span a{
+    margin-right: 2px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
     
 }
 .div-icons-search-bags{
@@ -441,15 +452,28 @@ header{
    
 
 }
-.heart-green:hover{
-    width: 100px;
+/* .heart-green:hover{
+    width: 150px;
+ 
+
+} */
+.heart-green .iconwhite:hover{
+   font-size: 30px;
 }
-.heart-green i{
+.iconwhite{
     position: absolute;
     left: 17px;
     bottom: 15px;
+    transition: width 0.5s;
+    color:#ffffff;
 }
-
+.heartred{
+    position: absolute;
+    left: 17px;
+    bottom: 15px;
+    transition: width 0.5s;
+    color:#a30000;
+}
 
 .div-category .right-class-btn, .div-category .left-class-btn{
     position: absolute;
@@ -655,24 +679,51 @@ color: var(--white);}
     list-style: none;
 }
 
-.footer-links li{
+.footer-links li a{
     list-style: none;
     padding-top: 7px;
     font-size: 17px;
-    
+    text-decoration: none;
     color: var(--gray-sh);
     line-height: 29px;
 }
 
 .tail{
     margin-top: 83px;
-    margin-left: 165px;
+    margin-left: 96px;
     margin-right: 133px;
     display: flex;
 
     
 }
-.tail div:first-child {
-    margin-right: 363px;
+.tail>div:first-child {
+    margin-right: 346px;
     font-size: 30px;
+    display: flex;
+   
+}
+.tail div div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--linke-icon);
+    text-align: center;
+    margin-right: 5px;
+   
+}
+.tail div div i{
+    margin-top: 5px;
+}
+
+.tail div div:hover{
+    color: var(--white);
+    background-color: var(--green-main);
+    width: 50px;
+    height: 50px;
+}
+.coloricon{
+    color:#8e918a
+}
+.coloricon:hover{
+    color:var(--white);
 }
